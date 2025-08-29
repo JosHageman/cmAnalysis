@@ -1,6 +1,6 @@
 # cmAnalysis
 
-![R-CMD-check](https://github.com/joshageman/cmAnalysis/actions/workflows/R-CMD-check.yaml/badge.svg)(https://github.com/JosHageman/cmAnalysis/actions)
+![R-CMD-check](https://github.com/joshageman/cmAnalysis/actions/workflows/R-CMD-check.yaml/badge.svg)
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![CRAN status](https://www.r-pkg.org/badges/version/cmAnalysis)
 ![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/cmAnalysis)
