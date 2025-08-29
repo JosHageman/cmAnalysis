@@ -1,9 +1,11 @@
 # cmAnalysis
 
-Analysis and visualization of concept mapping data in R.
+![R-CMD-check](https://github.com/joshageman/cmAnalysis/actions/workflows/R-CMD-check.yaml/badge.svg)(https://github.com/JosHageman/cmAnalysis/actions)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![CRAN status](https://www.r-pkg.org/badges/version/cmAnalysis)
+![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/cmAnalysis)
 
-[![CRAN version](https://www.r-pkg.org/badges/version/cmAnalysis)](https://cran.r-project.org/package=cmAnalysis)
-[![R-CMD-check](https://github.com/JosHageman/cmAnalysis/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JosHageman/cmAnalysis/actions)
+Analysis and visualization of concept mapping data in R.
 
 ---
 
@@ -43,16 +45,16 @@ devtools::install_github("JosHageman/cmAnalysis")
 library(cmAnalysis)
 
 # Assume you have participant sorting data
-# data <- read.csv("sortMatrix.csv")
+data <- read.csv("sortMatrix.csv")
 
 # Run the concept mapping analysis
-# result <- conceptMapping(data)
+result <- conceptMapping(data)
 
 # Visualize the MDS and cluster solution
-# plot(result)
+plot(result)
 
 # Generate a statement overview
-# overview <- createStatementOverview(result)
+overview <- createStatementOverview(result)
 ```
 
 More examples are provided in the help files and vignettes.
