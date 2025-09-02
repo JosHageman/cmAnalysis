@@ -11,7 +11,13 @@ Analysis and visualization of concept mapping data in R.
 
 ## Overview
 
-`cmAnalysis` provides a complete workflow for the analysis of **concept mapping data**. This package supports:
+`cmAnalysis` provides a complete workflow for the analysis of **concept mapping data**. 
+
+The methodology and its validity are discussed in:  
+Kampen, J.K., Hageman, J.A., Breuer, M., & Tobi, H. (2025). *The validity of concept mapping: let’s call a spade a spade.* *Quality & Quantity.* <https://doi.org/10.1007/s11135-025-02351-z>  
+
+
+This package supports:
 
 - **Hierarchical clustering** of participant-sort data
 - **Multidimensional scaling (MDS)** to map statements in 2D space
