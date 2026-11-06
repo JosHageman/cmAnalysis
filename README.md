@@ -51,16 +51,17 @@ devtools::install_github("JosHageman/cmAnalysis")
 library(cmAnalysis)
 
 # Assume you have participant sorting data
-data <- read.csv("sortMatrix.csv")
+set.seed(1)
+data <- simulateCardData(nSorters = 40, verbose = FALSE)
 
-# Run the concept mapping analysis
-result <- conceptMapping(data)
+# Run the network analysis
+result <- conceptMapping(data, method = "network", verbose = FALSE)
 
-# Visualize the MDS and cluster solution
+# Visualize the network solution
 plot(result)
 
 # Generate a statement overview
-overview <- createStatementOverview(result)
+overview <- createStatementOverview(data)
 ```
 
 More examples are provided in the help files and vignettes.
@@ -72,7 +73,7 @@ More examples are provided in the help files and vignettes.
 | Function                   | Description                                         |
 |----------------------------|-----------------------------------------------------|
 | `conceptMapping()`         | Performs the full concept mapping analysis          |
-| `plot.conceptMap()`        | Visualizes MDS configuration and cluster boundaries |
+| `plot.conceptMap()`        | Displays plots for the selected analysis method     |
 | `crossClusterMap()`        | Displays overlap or proximity between clusters      |
 | `createStatementOverview()`| Creates a tidy overview of statements               |
 | `abbreviateStatements()`   | Abbreviates long labels for better plotting         |
@@ -102,7 +103,7 @@ License: **GPL-3**
 If you use this package, please cite it as:
 
 ```
-Hageman, J. & Kampen, J. (2025). cmAnalysis: Analysis of Concept Mapping Data in R. R package version 1.0.0. https://CRAN.R-project.org/package=cmAnalysis
+Hageman, J. & Kampen, J. (2025). cmAnalysis: Analysis of Concept Mapping Data in R. R package version 1.1.0. https://CRAN.R-project.org/package=cmAnalysis
 ```
 
 ---
