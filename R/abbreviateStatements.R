@@ -85,7 +85,7 @@ abbreviateStatements <- function(CMData, max_length = 30) {
     "each", "few", "more", "most", "other", "some", "such", "no",
     "nor", "not", "only", "own", "same", "so", "than", "too", "very",
     "s", "t", "can", "will", "just", "don", "should", "now", "ever",
-    "used", "never", "told", "st", "nd", "rd", "th"), .Names = NULL)
+    "used", "never", "told", "st", "nd", "rd", "th"), names = NULL)
 
   # Step 2: Convert the stopwords into a regular expression pattern
   stopwords_pattern <- paste0("\\b(", paste(stopwords, collapse = "|"), ")\\b")
